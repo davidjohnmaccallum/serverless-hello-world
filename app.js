@@ -1,13 +1,13 @@
 'use strict';
 
+const greeter = require('./greeter');
 const express = require('express');
 
 const app = express();
 
 // Routes
-app.get('/hello-world', (req, res) => {
-  const name = req.query.name ? req.query.name : 'World';
-  res.send(`Hello ${name}!`);
+app.get('/hello-world', (req, res) => {  
+  res.send(greeter.sayHello(req.query.name));
 });
 
 app.get('/*', (req, res) => {
