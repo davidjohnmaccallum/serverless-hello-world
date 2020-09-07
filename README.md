@@ -7,3 +7,4 @@ This is the getting started program that Serverless creates.
 ## Thoughts
 
 * I'm wondering how you run this program locally.
+* My serverless.yml looks nothing like the examples in the docs.

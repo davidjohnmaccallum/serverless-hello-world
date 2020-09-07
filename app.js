@@ -8,6 +8,7 @@ const app = express();
 // Routes
 app.get('/hello-world', (req, res) => {  
   res.send(greeter.sayHello(req.query.name));
+  console.log(process.env)
 });
 
 app.get('/*', (req, res) => {
