@@ -1,7 +1,7 @@
 org: davidjohnmac
 app: my-express-app
 component: express
-name: express-starter
+name: serverless-hello-world
 
 inputs:
   src: ./
