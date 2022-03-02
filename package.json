@@ -7,10 +7,12 @@
     "express": "^4.17.1"
   },
   "devDependencies": {
+    "eslint": "^8.10.0",
+    "eslint-plugin-jest": "^26.1.1",
     "jest": "26.4.2"
   },
   "scripts": {
-    "test": "jest"
+    "test": "eslint . && jest"
   },
   "author": "",
   "license": "ISC"

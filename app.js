@@ -11,6 +11,11 @@ app.get('/hello-world', (req, res) => {
   console.log(process.env)
 });
 
+app.get('/goodbye-world', (req, res) => {  
+  res.send(greeter.sayGoodbye(req.query.name));
+  console.log(process.env)
+});
+
 app.get('/*', (req, res) => {
   res.send(`Request received: ${req.method} - ${req.path}`);
 });

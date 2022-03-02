@@ -2,4 +2,8 @@ function sayHello(name) {
   return `Hello ${name ? name : 'World'}!`
 }
 
-module.exports = { sayHello }
+function sayGoodbye(name) {
+  return `Goodbye ${name ? name : 'World'}!`
+}
+
+module.exports = { sayHello, sayGoodbye }
